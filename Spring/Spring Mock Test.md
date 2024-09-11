@@ -1,9 +1,9 @@
 # Mock Test
-실제 객체들 대신 가짜 객체로 하는 단위 테스트. 
+실제 객체들 대신 가짜 객체로 하는 단위 테스트.  
 이렇게 가짜 객체로 테스트하면, 복잡한 의존관계를 제거하거나 조정할 수 있음.
 
 # Mock Test를 하는 이유
-1. 실제 객체로 테스트하면, 외부와 의존성(DB, Controller 등)을 가져 테스트가 무거워짐(테스트 케이스가 많아질수록 오래걸림)
+1. 실제 객체로 테스트하면, 외부와 의존성(DB, Controller 등)을 가져 테스트가 무거워짐(테스트 케이스가 많아질수록 오래걸림)  
 2. 또, 실제 객체로 테스트하면 예외 상황을 테스트할 때, 해당 예외 상황을 실제처럼 세팅해줘야함. but, Mcok 테스트는 mock 객체에 stub을 씌울 수 있음 (또, stub을 통해 테스트를 더 직관적으로 할 수 있음)
 
 # Mockito
@@ -77,7 +77,7 @@ Spring에서 Mock Test를 편하게 할 수 있도록 지원해주는 테스트 
 # BDDMockito
 - Mockito에서 제공하는 BDD 테스트 도구. 
 - 기본적으론 기본 Mockito와 동일. 
-단지, BDD(Behavier-Driven-Development) 테스트 시, given-when-then 과정을 직관적으로 만들어주는 라이브러리
+단지, BDD(Behavier-Driven-Development) 테스트 시, given-when-then 과정을 직관적으로 만들어주는 라이브러리  
 예를 들어,
 - `when()` -> `given()`
 - `verify()` -> `then()`
